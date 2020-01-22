@@ -56,6 +56,8 @@ table {
 @lightpink: #FFB0F2;
 @slightlydarkerpink: #D5A3FF;
 @purpleish: #D703FF;
+@whiteishbackground: #ffe7fe;
+@purpleishdarkishbackground: #dba7d7;
 
 * {
 	box-sizing: border-box;
@@ -93,6 +95,7 @@ html, body {
 		max-width: 100%;
 		border: solid black 1px;
 		border-radius: .5%;
+		font-size: 1rem;
 
 		.mainheadercontent {
 			margin: 2%;
@@ -125,11 +128,68 @@ html, body {
 } // closes .mainheader
 
 	.topcontent {
-		margin: .5%;
-	
-	
+		font-size: 1rem;
+		display: flex;
+		background-color: @whiteishbackground;
+
+		.workhistory {
+			margin-left: 40%;
+			padding: 1%;
+			border: solid black 1px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 1%;
+			margin-bottom: 1%;
+			
+			h2 {
+				margin-bottom: 20%;
+				text-decoration: underline;
+			}
+			p {
+				font-size: .8rem;
+				margin-top: 2%;
+			}
+		
+		} // closes .workhistory
+
+		.skills {
+			display: flex;
+			flex-direction: column;
+			margin: 1%;
+
+			h2 {
+				font-size: 1.2rem;
+			}
+			ul {
+				border: solid black .5px;
+				max-width: 30%;
+				border-radius: 5px;
+				padding: 1%;
+			}
+		}
 	} // closes .topcontent
 
+	.contact {
+		background-color: @purpleishdarkishbackground;
 
+		.contactdiv {
+			display: flex;
+			flex-direction: column;
+			margin-left: .5%;
+		h2 {
+			font-size: 1.2rem;
+		}
+
+		address {
+			font-size: .9rem;
+		}
+	} // closes .contactdiv
+	} // closes .contact
+
+	footer {
+		background-color: #cbbae0;
+	}
 } // closes html and body
 

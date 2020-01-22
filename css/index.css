@@ -171,6 +171,7 @@ body .mainheader {
   max-width: 100%;
   border: solid black 1px;
   border-radius: 0.5%;
+  font-size: 1rem;
 }
 html .mainheader .mainheadercontent,
 body .mainheader .mainheadercontent {
@@ -203,5 +204,68 @@ body .mainheader .mainheadercontent .headercontact {
 }
 html .topcontent,
 body .topcontent {
-  margin: 0.5%;
+  font-size: 1rem;
+  display: flex;
+  background-color: #ffe7fe;
+}
+html .topcontent .workhistory,
+body .topcontent .workhistory {
+  margin-left: 40%;
+  padding: 1%;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+html .topcontent .workhistory h2,
+body .topcontent .workhistory h2 {
+  margin-bottom: 20%;
+  text-decoration: underline;
+}
+html .topcontent .workhistory p,
+body .topcontent .workhistory p {
+  font-size: 0.8rem;
+  margin-top: 2%;
+}
+html .topcontent .skills,
+body .topcontent .skills {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+html .topcontent .skills h2,
+body .topcontent .skills h2 {
+  font-size: 1.2rem;
+}
+html .topcontent .skills ul,
+body .topcontent .skills ul {
+  border: solid black 0.5px;
+  max-width: 30%;
+  border-radius: 5px;
+  padding: 1%;
+}
+html .contact,
+body .contact {
+  background-color: #dba7d7;
+}
+html .contact .contactdiv,
+body .contact .contactdiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5%;
+}
+html .contact .contactdiv h2,
+body .contact .contactdiv h2 {
+  font-size: 1.2rem;
+}
+html .contact .contactdiv address,
+body .contact .contactdiv address {
+  font-size: 0.9rem;
+}
+html footer,
+body footer {
+  background-color: #cbbae0;
 }
