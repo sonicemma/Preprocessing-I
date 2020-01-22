@@ -268,4 +268,7 @@ body .contact .contactdiv address {
 html footer,
 body footer {
   background-color: #cbbae0;
+  display: flex;
+  padding: 0.5%;
+  justify-content: center;
 }
