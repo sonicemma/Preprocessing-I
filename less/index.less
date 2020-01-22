@@ -117,6 +117,10 @@ html, body {
 		border: solid black 1px;
 		border-radius: .5%;
 		font-size: 1rem;
+		@media (max-width: 500px){
+			display: flex;
+			flex-direction: column;
+		}
 
 		.mainheadercontent {
 			margin: 2%;
@@ -143,6 +147,9 @@ html, body {
 			padding: .5%;
 			border: solid black 1px;
 			background-color: @purpleish;
+			@media (max-width: 500px){
+				width: 40%;
+			}
 
 		}
 	} // closes mainheadercontent
@@ -152,28 +159,6 @@ html, body {
 		font-size: 1rem;
 		display: flex;
 		background-color: @whiteishbackground;
-
-		.workhistory {
-			margin-left: 40%;
-			padding: 1%;
-			border: solid black 1px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin-top: 1%;
-			margin-bottom: 1%;
-			
-			h2 {
-				margin-bottom: 20%;
-				text-decoration: underline;
-			}
-			p {
-				font-size: .8rem;
-				margin-top: 2%;
-			}
-		
-		} // closes .workhistory
 
 		.skills {
 			display: flex;
@@ -188,6 +173,9 @@ html, body {
 				max-width: 30%;
 				border-radius: 5px;
 				padding: 1%;
+				@media (max-width: 500px){
+					width: 100%;
+				}
 			}
 		}
 	} // closes .topcontent

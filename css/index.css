@@ -200,6 +200,13 @@ body .container .mainheader {
   border-radius: 0.5%;
   font-size: 1rem;
 }
+@media (max-width: 500px) {
+  html .container .mainheader,
+  body .container .mainheader {
+    display: flex;
+    flex-direction: column;
+  }
+}
 html .container .mainheader .mainheadercontent,
 body .container .mainheader .mainheadercontent {
   margin: 2%;
@@ -229,33 +236,17 @@ body .container .mainheader .mainheadercontent .headercontact {
   border: solid black 1px;
   background-color: #D703FF;
 }
+@media (max-width: 500px) {
+  html .container .mainheader .mainheadercontent .headercontact,
+  body .container .mainheader .mainheadercontent .headercontact {
+    width: 40%;
+  }
+}
 html .container .topcontent,
 body .container .topcontent {
   font-size: 1rem;
   display: flex;
   background-color: #ffe7fe;
-}
-html .container .topcontent .workhistory,
-body .container .topcontent .workhistory {
-  margin-left: 40%;
-  padding: 1%;
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-html .container .topcontent .workhistory h2,
-body .container .topcontent .workhistory h2 {
-  margin-bottom: 20%;
-  text-decoration: underline;
-}
-html .container .topcontent .workhistory p,
-body .container .topcontent .workhistory p {
-  font-size: 0.8rem;
-  margin-top: 2%;
 }
 html .container .topcontent .skills,
 body .container .topcontent .skills {
@@ -273,6 +264,12 @@ body .container .topcontent .skills ul {
   max-width: 30%;
   border-radius: 5px;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  html .container .topcontent .skills ul,
+  body .container .topcontent .skills ul {
+    width: 100%;
+  }
 }
 html .container .contact,
 body .container .contact {
