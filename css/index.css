@@ -168,13 +168,15 @@ body .navbar ul a {
 html .mainheader,
 body .mainheader {
   background-color: #FFB0F2;
-  display: flex;
-  flex-direction: column;
   max-width: 100%;
+  border: solid black 1px;
+  border-radius: 0.5%;
 }
 html .mainheader .mainheadercontent,
 body .mainheader .mainheadercontent {
   margin: 2%;
+  display: flex;
+  flex-direction: column;
 }
 html .mainheader .mainheadercontent h1,
 body .mainheader .mainheadercontent h1 {
@@ -188,4 +190,18 @@ body .mainheader .mainheadercontent .border {
 html .mainheader .mainheadercontent .headerimage,
 body .mainheader .mainheadercontent .headerimage {
   max-width: 70%;
+}
+html .mainheader .mainheadercontent .headercontact,
+body .mainheader .mainheadercontent .headercontact {
+  display: flex;
+  box-sizing: border-box;
+  width: 6.2%;
+  margin-top: 1%;
+  padding: 0.5%;
+  border: solid black 1px;
+  background-color: #D703FF;
+}
+html .topcontent,
+body .topcontent {
+  margin: 0.5%;
 }

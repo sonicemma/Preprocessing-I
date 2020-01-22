@@ -55,6 +55,7 @@ table {
 @mainfont: 'Playfair Display', serif;
 @lightpink: #FFB0F2;
 @slightlydarkerpink: #D5A3FF;
+@purpleish: #D703FF;
 
 * {
 	box-sizing: border-box;
@@ -89,13 +90,14 @@ html, body {
 	} // closes ..navbar
 	.mainheader {
 		background-color: @lightpink;
-		display: flex;
-		flex-direction: column;
 		max-width: 100%;
+		border: solid black 1px;
+		border-radius: .5%;
 
 		.mainheadercontent {
 			margin: 2%;
-		 
+			display: flex;
+			flex-direction: column;
 		
 		h1 {
 			font-size: 2.3rem;
@@ -109,7 +111,25 @@ html, body {
 		.headerimage {
 			max-width: 70%;
 		} // closes headerimage
+		.headercontact {
+			display: flex;
+			box-sizing: border-box;
+			width: 6.2%;
+			margin-top: 1%;
+			padding: .5%;
+			border: solid black 1px;
+			background-color: @purpleish;
+
+		}
 	} // closes mainheadercontent
 } // closes .mainheader
+
+	.topcontent {
+		margin: .5%;
+	
+	
+	} // closes .topcontent
+
+
 } // closes html and body
 
