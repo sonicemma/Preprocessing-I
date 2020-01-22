@@ -148,12 +148,27 @@ body img {
   max-width: 20%;
   height: auto;
 }
-html .navbar,
-body .navbar {
+@media (max-width: 500px) {
+  html img,
+  body img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  html .container,
+  body .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
+  }
+}
+html .container .navbar,
+body .container .navbar {
   margin: 1%;
 }
-html .navbar ul,
-body .navbar ul {
+html .container .navbar ul,
+body .container .navbar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -161,39 +176,51 @@ body .navbar ul {
   margin-left: 60%;
   font-size: 80%;
 }
-html .navbar ul a,
-body .navbar ul a {
+@media (max-width: 500px) {
+  html .container .navbar ul,
+  body .container .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    max-width: 80%;
+    font-size: 1.6rem;
+  }
+}
+html .container .navbar ul a,
+body .container .navbar ul a {
   text-decoration: none;
 }
-html .mainheader,
-body .mainheader {
+html .container .mainheader,
+body .container .mainheader {
   background-color: #FFB0F2;
   max-width: 100%;
   border: solid black 1px;
   border-radius: 0.5%;
   font-size: 1rem;
 }
-html .mainheader .mainheadercontent,
-body .mainheader .mainheadercontent {
+html .container .mainheader .mainheadercontent,
+body .container .mainheader .mainheadercontent {
   margin: 2%;
   display: flex;
   flex-direction: column;
 }
-html .mainheader .mainheadercontent h1,
-body .mainheader .mainheadercontent h1 {
+html .container .mainheader .mainheadercontent h1,
+body .container .mainheader .mainheadercontent h1 {
   font-size: 2.3rem;
 }
-html .mainheader .mainheadercontent .border,
-body .mainheader .mainheadercontent .border {
+html .container .mainheader .mainheadercontent .border,
+body .container .mainheader .mainheadercontent .border {
   border: solid black 0.5px;
   max-width: 70%;
 }
-html .mainheader .mainheadercontent .headerimage,
-body .mainheader .mainheadercontent .headerimage {
+html .container .mainheader .mainheadercontent .headerimage,
+body .container .mainheader .mainheadercontent .headerimage {
   max-width: 70%;
 }
-html .mainheader .mainheadercontent .headercontact,
-body .mainheader .mainheadercontent .headercontact {
+html .container .mainheader .mainheadercontent .headercontact,
+body .container .mainheader .mainheadercontent .headercontact {
   display: flex;
   box-sizing: border-box;
   width: 6.2%;
@@ -202,14 +229,14 @@ body .mainheader .mainheadercontent .headercontact {
   border: solid black 1px;
   background-color: #D703FF;
 }
-html .topcontent,
-body .topcontent {
+html .container .topcontent,
+body .container .topcontent {
   font-size: 1rem;
   display: flex;
   background-color: #ffe7fe;
 }
-html .topcontent .workhistory,
-body .topcontent .workhistory {
+html .container .topcontent .workhistory,
+body .container .topcontent .workhistory {
   margin-left: 40%;
   padding: 1%;
   border: solid black 1px;
@@ -220,53 +247,53 @@ body .topcontent .workhistory {
   margin-top: 1%;
   margin-bottom: 1%;
 }
-html .topcontent .workhistory h2,
-body .topcontent .workhistory h2 {
+html .container .topcontent .workhistory h2,
+body .container .topcontent .workhistory h2 {
   margin-bottom: 20%;
   text-decoration: underline;
 }
-html .topcontent .workhistory p,
-body .topcontent .workhistory p {
+html .container .topcontent .workhistory p,
+body .container .topcontent .workhistory p {
   font-size: 0.8rem;
   margin-top: 2%;
 }
-html .topcontent .skills,
-body .topcontent .skills {
+html .container .topcontent .skills,
+body .container .topcontent .skills {
   display: flex;
   flex-direction: column;
   margin: 1%;
 }
-html .topcontent .skills h2,
-body .topcontent .skills h2 {
+html .container .topcontent .skills h2,
+body .container .topcontent .skills h2 {
   font-size: 1.2rem;
 }
-html .topcontent .skills ul,
-body .topcontent .skills ul {
+html .container .topcontent .skills ul,
+body .container .topcontent .skills ul {
   border: solid black 0.5px;
   max-width: 30%;
   border-radius: 5px;
   padding: 1%;
 }
-html .contact,
-body .contact {
+html .container .contact,
+body .container .contact {
   background-color: #dba7d7;
 }
-html .contact .contactdiv,
-body .contact .contactdiv {
+html .container .contact .contactdiv,
+body .container .contact .contactdiv {
   display: flex;
   flex-direction: column;
   margin-left: 0.5%;
 }
-html .contact .contactdiv h2,
-body .contact .contactdiv h2 {
+html .container .contact .contactdiv h2,
+body .container .contact .contactdiv h2 {
   font-size: 1.2rem;
 }
-html .contact .contactdiv address,
-body .contact .contactdiv address {
+html .container .contact .contactdiv address,
+body .container .contact .contactdiv address {
   font-size: 0.9rem;
 }
-html footer,
-body footer {
+html .container footer,
+body .container footer {
   background-color: #cbbae0;
   display: flex;
   padding: 0.5%;

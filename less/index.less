@@ -59,6 +59,7 @@ table {
 @whiteishbackground: #ffe7fe;
 @purpleishdarkishbackground: #dba7d7;
 
+
 * {
 	box-sizing: border-box;
 }
@@ -67,16 +68,36 @@ html, body {
 	height: 100%;
 	margin: 1%;
 	font-family: @mainfont;
-
+	
 	img {
+		@media (max-width: 500px){
+			display: none;
+		}
 		max-width: 20%;
 		height: auto;
+
 	}
+
+	.container {
+		@media (max-width: 500px){
+			display: flex;
+			flex-direction: column;
+			max-width: 500px;
+			justify-content: center;
+		}
 
 	.navbar {
 		margin: 1%;
-	
 		ul {
+			@media (max-width: 500px){
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: auto;
+				flex-direction: column;
+				max-width: 80%;
+				font-size: 1.6rem;
+			}
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
@@ -194,5 +215,6 @@ html, body {
 		padding: .5%;
 		justify-content: center;
 	}
+} // closes .container
 } // closes html and body
 
