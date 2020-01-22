@@ -54,6 +54,8 @@ table {
 
 @mainfont: 'Playfair Display', serif;
 @lightpink: #FFB0F2;
+@slightlydarkerpink: #D5A3FF;
+
 * {
 	box-sizing: border-box;
 }
@@ -63,22 +65,51 @@ html, body {
 	margin: 1%;
 	font-family: @mainfont;
 
-	.navbar ul{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		max-width: 40%;
-		margin-left: 60%;
-		font-size: 80%;
+	img {
+		max-width: 20%;
+		height: auto;
+	}
 
-		a {
-			text-decoration: none;
-		}
+	.navbar {
+		margin: 1%;
+	
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			max-width: 40%;
+			margin-left: 60%;
+			font-size: 80%;
 
-	} // closes .navbar ul
+			a {
+				text-decoration: none;
+			} // closes a
 
+		} // closes ul
+	} // closes ..navbar
 	.mainheader {
 		background-color: @lightpink;
-	}
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+
+		.mainheadercontent {
+			margin: 2%;
+		 
+		
+		h1 {
+			font-size: 2.3rem;
+		} // closes h1
+
+		.border {
+			border: solid black .5px;
+			max-width: 70%;
+		} // closes border
+
+		.headerimage {
+			max-width: 70%;
+		} // closes headerimage
+	} // closes mainheadercontent
+} // closes .mainheader
 } // closes html and body
 

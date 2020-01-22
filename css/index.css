@@ -143,6 +143,15 @@ body {
   margin: 1%;
   font-family: 'Playfair Display', serif;
 }
+html img,
+body img {
+  max-width: 20%;
+  height: auto;
+}
+html .navbar,
+body .navbar {
+  margin: 1%;
+}
 html .navbar ul,
 body .navbar ul {
   display: flex;
@@ -159,4 +168,24 @@ body .navbar ul a {
 html .mainheader,
 body .mainheader {
   background-color: #FFB0F2;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+html .mainheader .mainheadercontent,
+body .mainheader .mainheadercontent {
+  margin: 2%;
+}
+html .mainheader .mainheadercontent h1,
+body .mainheader .mainheadercontent h1 {
+  font-size: 2.3rem;
+}
+html .mainheader .mainheadercontent .border,
+body .mainheader .mainheadercontent .border {
+  border: solid black 0.5px;
+  max-width: 70%;
+}
+html .mainheader .mainheadercontent .headerimage,
+body .mainheader .mainheadercontent .headerimage {
+  max-width: 70%;
 }
