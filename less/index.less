@@ -64,6 +64,26 @@ table {
 	box-sizing: border-box;
 }
 
+.center(){
+	display: flex;
+	justify-content: center;
+}
+
+.column(){
+	display: flex;
+	flex-direction: column;
+}
+
+.spacing(){
+	margin-top: 1;
+	margin-bottom: 1%;
+}
+
+.listborder(){
+	border: solid black .5px;
+	border-radius: 5px;
+}
+
 html, body {
 	height: 100%;
 	margin: 1%;
@@ -80,10 +100,11 @@ html, body {
 
 	.container {
 		@media (max-width: 500px){
-			display: flex;
+			.center();
+			//display: flex;
+			//justify-content: center;
 			flex-direction: column;
 			max-width: 500px;
-			justify-content: center;
 		}
 
 	.navbar {
@@ -178,6 +199,27 @@ html, body {
 				}
 			}
 		}
+
+		.work {
+			.column();
+			.listborder();
+			max-width: 30%;
+			margin-bottom: 2%;
+			margin-left: .7%;
+
+			h2 {
+				font-size: 1.2rem;
+				.spacing();
+			}
+
+			h3 {
+				text-decoration: underline;
+			}
+			ul {
+				.listborder()
+			}
+		}
+
 	} // closes .topcontent
 
 	.contact {
@@ -199,9 +241,8 @@ html, body {
 
 	footer {
 		background-color: #cbbae0;
-		display: flex;
 		padding: .5%;
-		justify-content: center;
+		.center();
 	}
 } // closes .container
 } // closes html and body

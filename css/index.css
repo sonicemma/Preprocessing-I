@@ -158,9 +158,9 @@ body img {
   html .container,
   body .container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     max-width: 500px;
-    justify-content: center;
   }
 }
 html .container .navbar,
@@ -271,6 +271,31 @@ body .container .topcontent .skills ul {
     width: 100%;
   }
 }
+html .container .topcontent .work,
+body .container .topcontent .work {
+  display: flex;
+  flex-direction: column;
+  border: solid black 0.5px;
+  border-radius: 5px;
+  max-width: 30%;
+  margin-bottom: 2%;
+  margin-left: 0.7%;
+}
+html .container .topcontent .work h2,
+body .container .topcontent .work h2 {
+  font-size: 1.2rem;
+  margin-top: 1;
+  margin-bottom: 1%;
+}
+html .container .topcontent .work h3,
+body .container .topcontent .work h3 {
+  text-decoration: underline;
+}
+html .container .topcontent .work ul,
+body .container .topcontent .work ul {
+  border: solid black 0.5px;
+  border-radius: 5px;
+}
 html .container .contact,
 body .container .contact {
   background-color: #dba7d7;
@@ -292,7 +317,7 @@ body .container .contact .contactdiv address {
 html .container footer,
 body .container footer {
   background-color: #cbbae0;
-  display: flex;
   padding: 0.5%;
+  display: flex;
   justify-content: center;
 }
