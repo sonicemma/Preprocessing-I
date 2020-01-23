@@ -220,7 +220,7 @@ body .container .mainheader .mainheadercontent h1 {
 html .container .mainheader .mainheadercontent .border,
 body .container .mainheader .mainheadercontent .border {
   border: solid black 0.5px;
-  max-width: 70%;
+  max-width: 100%;
 }
 html .container .mainheader .mainheadercontent .headerimage,
 body .container .mainheader .mainheadercontent .headerimage {
